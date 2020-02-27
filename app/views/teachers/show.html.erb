@@ -1,0 +1,12 @@
+<h3>Name:</h3>
+<br/>
+<h5><%= @teacher.name %></h5>
+
+<br/>
+
+<button><%= link_to "Back", teachers_path %></button>
+<button><%= link_to 'Edit Info', edit_teacher_path %></button>
+<%= form_for @teacher, method: :delete do |f| %>
+    <%= f.submit value="Fire Teacher"%>
+<% end %>
+
